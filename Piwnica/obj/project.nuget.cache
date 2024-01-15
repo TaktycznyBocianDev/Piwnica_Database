@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xnaQVFU3Hu73a3z0T6uLrwm/d0uK24exrdfHKrdzle5g5W32BeKJZxbVOszB/aWNo8CHwUbprb1ybaJxEJsSgQ==",
+  "success": true,
+  "projectFilePath": "D:\\CSharpProjects\\Piwnica\\Piwnica\\Piwnica.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Stanisław\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
+    "C:\\Users\\Stanisław\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
+    "C:\\Users\\Stanisław\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512"
+  ],
+  "logs": []
+}
