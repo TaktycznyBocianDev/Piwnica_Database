@@ -14,12 +14,15 @@ namespace Piwnica
 
     public class ViewModel : IListViewModel<ContenerModel>, IListViewModel<ShelfModel>, IListViewModel<ItemModel>
     {
+        /*
+         * Przekazywanie do obsługi Formsa Listy obiektów. Ich przetworzeniem na tekst zajmuje się już sam View.
+         */
 
         public void GetAllFromListToListBox(List<ContenerModel> list, ListBox listBox)
         {
             foreach (var item in list)
             {
-                listBox.Items.Add(item.AsString);
+                listBox.Items.Add(item);
             }
         }
 
@@ -27,7 +30,7 @@ namespace Piwnica
         {
             foreach (var item in list)
             {
-                listBox.Items.Add(item.AsString);
+                listBox.Items.Add(item);
             }
         }
 
@@ -35,7 +38,7 @@ namespace Piwnica
         {
             foreach (var item in list)
             {
-                listBox.Items.Add(item.AsString);
+                listBox.Items.Add(item);
             }
         }
     }

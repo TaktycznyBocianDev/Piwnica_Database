@@ -113,6 +113,7 @@
             Shelfs_LBx.Name = "Shelfs_LBx";
             Shelfs_LBx.Size = new Size(160, 304);
             Shelfs_LBx.TabIndex = 7;
+            Shelfs_LBx.SelectedIndexChanged += Shelfs_LBx_SelectedIndexChanged;
             // 
             // label4
             // 

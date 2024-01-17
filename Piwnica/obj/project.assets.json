@@ -122,11 +122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSharpProjects\\Piwnica\\Piwnica\\Piwnica.csproj",
+      "projectUniqueName": "D:\\CSharpProjects\\Piwnica\\Piwnica_Database\\Piwnica\\Piwnica.csproj",
       "projectName": "Piwnica",
-      "projectPath": "D:\\CSharpProjects\\Piwnica\\Piwnica\\Piwnica.csproj",
+      "projectPath": "D:\\CSharpProjects\\Piwnica\\Piwnica_Database\\Piwnica\\Piwnica.csproj",
       "packagesPath": "C:\\Users\\Stanisław\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharpProjects\\Piwnica\\Piwnica\\obj\\",
+      "outputPath": "D:\\CSharpProjects\\Piwnica\\Piwnica_Database\\Piwnica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

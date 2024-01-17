@@ -10,7 +10,7 @@ namespace Piwnica
     public class ShelfModel
     {
 
-        public int id {  get; private set; }
+        public int id {  get; set; }
         [Column("ContenerId")]
         public int idContener {  get; set; }
         public string name { get; set; }
