@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Piwnica
 {
-    public class ContenerModel
+    public class ContenerModel : IData
     {
 
-        public int id {  get; private set; }
+        public int id {  get; set; }
         public string name { get; set; }
 
         public ContenerModel()  => name = "Szafka";
@@ -17,7 +18,7 @@ namespace Piwnica
 
         public string AsString
         {
-            get { return $"{id}. {name}"; }
+            get { return $"{name}";}
         }
 
 

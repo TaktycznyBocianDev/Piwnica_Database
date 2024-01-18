@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Piwnica
 {
-    public class ShelfModel
+    public class ShelfModel : IData
     {
 
         public int id {  get; set; }
@@ -17,7 +17,7 @@ namespace Piwnica
 
         public string AsString
         {
-            get { return $"{id}. {name}"; }
+            get { return $"{name}"; }
         }
 
         public ShelfModel() => name = "Półka";

@@ -22,6 +22,27 @@ namespace Piwnica
             _connection = connection;
         }
 
+        public List<T> LoadAll<T>()
+        {
+            string tableName = GetTableName<T>();
+            string query = $"SELECT * FROM {tableName}";
+
+            return _connection.Query<T>(query, new DynamicParameters()).ToList();
+        }
+        private string GetTableName<T>()
+        {
+            switch (typeof(T).Name)
+            {
+                case "ContenerModel": return "Contener";
+                    break;
+                case "ItemModel": return "Item";
+                    break;
+                case "ShelfModel": return "Shelf";
+                default: return ""; 
+                    break;
+            }
+        }
+
         public List<ContenerModel> LoadAllConteners()
         {
             return _connection.Query<ContenerModel>("SELECT * FROM Contener", new DynamicParameters()).ToList();
@@ -35,7 +56,6 @@ namespace Piwnica
 
         public List<ShelfModel> LoadAllShelfsByContener(int contenerId)
         {
-
             string query = "SELECT * FROM Shelf WHERE ContenerId = @ContenerId";
             return _connection.Query<ShelfModel>(query, new { ContenerId = contenerId }).ToList();
         }

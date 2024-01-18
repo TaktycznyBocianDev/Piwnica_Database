@@ -7,39 +7,31 @@ using System.Threading.Tasks;
 namespace Piwnica
 {
 
-    public interface IListViewModel<T>
+    public class ViewModel 
     {
-        void GetAllFromListToListBox(List<T> list, ListBox listBox);
-    }
 
-    public class ViewModel : IListViewModel<ContenerModel>, IListViewModel<ShelfModel>, IListViewModel<ItemModel>
-    {
-        /*
-         * Przekazywanie do obsługi Formsa Listy obiektów. Ich przetworzeniem na tekst zajmuje się już sam View.
-         */
+        DataReader _reader;
 
-        public void GetAllFromListToListBox(List<ContenerModel> list, ListBox listBox)
+        public ViewModel(DataReader dataReader) 
         {
-            foreach (var item in list)
-            {
-                listBox.Items.Add(item);
-            }
+
+            _reader = dataReader;
+
         }
 
-        public void GetAllFromListToListBox(List<ShelfModel> list, ListBox listBox)
-        {
-            foreach (var item in list)
-            {
-                listBox.Items.Add(item);
-            }
+       public  List<ContenerModel> GetAllConteenrs()
+        { 
+            return _reader.LoadAllConteners();
         }
 
-        public void GetAllFromListToListBox(List<ItemModel> list, ListBox listBox)
+        public List<ShelfModel> GetAllShelfByContener(int superiorId)
         {
-            foreach (var item in list)
-            {
-                listBox.Items.Add(item);
-            }
+            return _reader.LoadAllShelfsByContener(superiorId);
+        }
+
+        public List<ItemModel> GetAllItemByShelf(int superiorId)
+        {
+            return _reader.LoadItemsByShelf(superiorId);
         }
     }
 }

@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Piwnica
 {
-    public class ItemModel
+    public class ItemModel : IData
     {
 
-        public int id { get; private set; }
+        public int id { get; set; }
         public int idContener { get; set; }
         public int idShelf { get; set; }
         public string name { get; set; }
 
         public string AsString
         {
-            get { return $"{id}. {name}"; }
+            get { return $"{name}"; }
         }
 
         public ItemModel() => name = "Przedmiot";
