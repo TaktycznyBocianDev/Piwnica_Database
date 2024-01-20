@@ -140,6 +140,7 @@
             ContenerAdd_Btn.TabIndex = 10;
             ContenerAdd_Btn.Text = "Dodaj";
             ContenerAdd_Btn.UseVisualStyleBackColor = true;
+            ContenerAdd_Btn.Click += ContenerAdd_Btn_Click;
             // 
             // ContenerRemove_Btn
             // 
@@ -158,6 +159,7 @@
             ShelfAdd_Btn.TabIndex = 12;
             ShelfAdd_Btn.Text = "Dodaj";
             ShelfAdd_Btn.UseVisualStyleBackColor = true;
+            ShelfAdd_Btn.Click += ShelfAdd_Btn_Click;
             // 
             // ShelfRemove_Btn
             // 
@@ -185,6 +187,7 @@
             StuffAdd_Btn.TabIndex = 14;
             StuffAdd_Btn.Text = "Dodaj";
             StuffAdd_Btn.UseVisualStyleBackColor = true;
+            StuffAdd_Btn.Click += StuffAdd_Btn_Click;
             // 
             // ContenerMod_Btn
             // 

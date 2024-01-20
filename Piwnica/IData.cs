@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Piwnica
 {
-    internal interface IData
+    public abstract class IData
     {
         public int id { get; set; }
        

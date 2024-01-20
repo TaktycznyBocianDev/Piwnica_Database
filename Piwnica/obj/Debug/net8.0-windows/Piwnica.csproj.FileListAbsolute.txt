@@ -52,3 +52,4 @@ D:\CSharpProjects\Piwnica\Piwnica_Database\Piwnica\obj\Debug\net8.0-windows\refi
 D:\CSharpProjects\Piwnica\Piwnica_Database\Piwnica\obj\Debug\net8.0-windows\Piwnica.pdb
 D:\CSharpProjects\Piwnica\Piwnica_Database\Piwnica\obj\Debug\net8.0-windows\Piwnica.genruntimeconfig.cache
 D:\CSharpProjects\Piwnica\Piwnica_Database\Piwnica\obj\Debug\net8.0-windows\ref\Piwnica.dll
+D:\CSharpProjects\Piwnica\Piwnica_Database\Piwnica\obj\Debug\net8.0-windows\Piwnica.CreateNewElementForm.resources

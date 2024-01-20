@@ -25,5 +25,12 @@ namespace Piwnica
         {
             this.name = name;
         }
+
+        public ItemModel(int idContener, int idShelf, string name)
+        {
+            this.idContener = idContener;
+            this.idShelf = idShelf;
+            this.name = name;
+        }
     }
 }

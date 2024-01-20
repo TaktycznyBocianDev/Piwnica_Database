@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Piwnica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10fece194d9edc51e5dfddcfbb4c06493ea22437")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7f8b2410b9278a80662995224972b7220c13057")]
 [assembly: System.Reflection.AssemblyProductAttribute("Piwnica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Piwnica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
