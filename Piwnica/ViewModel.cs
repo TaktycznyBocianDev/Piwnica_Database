@@ -12,12 +12,14 @@ namespace Piwnica
 
         DataReader _reader;
         DataCreator _creator;
+        DataDestroyer _destroyer;
 
-        public ViewModel(DataReader dataReader, DataCreator creator)
+        public ViewModel(DataReader dataReader, DataCreator creator, DataDestroyer destroyer)
         {
 
             _reader = dataReader;
             _creator = creator;
+            _destroyer = destroyer;
         }
 
         public  List<ContenerModel> GetAllConteenrs()
@@ -48,6 +50,21 @@ namespace Piwnica
         public void AddToCollection(ItemModel item)
         {
             _creator.Create(item);
+        }
+
+        public void Destroy(ContenerModel contener)
+        {
+            _destroyer.Delete(contener);
+        }
+        
+        public void Destroy(ShelfModel shelf)
+        {
+            _destroyer.Delete(shelf);
+        }
+
+        public void Destroy(ItemModel item)
+        {
+            _destroyer.Delete(item);
         }
 
         public void AddToColletcion(int superiorContenerId, int superiorShelfId, string name)

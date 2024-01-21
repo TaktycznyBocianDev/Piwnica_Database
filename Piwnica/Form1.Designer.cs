@@ -150,6 +150,7 @@
             ContenerRemove_Btn.TabIndex = 11;
             ContenerRemove_Btn.Text = "Usuń";
             ContenerRemove_Btn.UseVisualStyleBackColor = true;
+            ContenerRemove_Btn.Click += ContenerRemove_Btn_Click;
             // 
             // ShelfAdd_Btn
             // 
@@ -169,6 +170,7 @@
             ShelfRemove_Btn.TabIndex = 13;
             ShelfRemove_Btn.Text = "Usuń";
             ShelfRemove_Btn.UseVisualStyleBackColor = true;
+            ShelfRemove_Btn.Click += ShelfRemove_Btn_Click;
             // 
             // StuffRemove_Btn
             // 
@@ -178,6 +180,7 @@
             StuffRemove_Btn.TabIndex = 15;
             StuffRemove_Btn.Text = "Usuń";
             StuffRemove_Btn.UseVisualStyleBackColor = true;
+            StuffRemove_Btn.Click += StuffRemove_Btn_Click;
             // 
             // StuffAdd_Btn
             // 
@@ -197,6 +200,7 @@
             ContenerMod_Btn.TabIndex = 16;
             ContenerMod_Btn.Text = "Modyfikuj";
             ContenerMod_Btn.UseVisualStyleBackColor = true;
+            ContenerMod_Btn.Click += ContenerMod_Btn_Click;
             // 
             // ShelfsMod_Btn
             // 
@@ -206,6 +210,7 @@
             ShelfsMod_Btn.TabIndex = 17;
             ShelfsMod_Btn.Text = "Modyfikuj";
             ShelfsMod_Btn.UseVisualStyleBackColor = true;
+            ShelfsMod_Btn.Click += ShelfsMod_Btn_Click;
             // 
             // StuffMod_Btn
             // 
@@ -215,6 +220,7 @@
             StuffMod_Btn.TabIndex = 18;
             StuffMod_Btn.Text = "Modyfikuj";
             StuffMod_Btn.UseVisualStyleBackColor = true;
+            StuffMod_Btn.Click += StuffMod_Btn_Click;
             // 
             // Form1
             // 

@@ -65,7 +65,7 @@ namespace Piwnica
                 using (var transaction = _connection.BeginTransaction())
                 {
                     string query = "INSERT INTO Shelf(ContenerId, name) VALUES (@ContenerId, @name);";
-                    _connection.Execute(query, new { ContenerId = shelf.idContener, name = shelf.name }, transaction: transaction);
+                    _connection.Execute(query, new { ContenerId = shelf.ContenerId, name = shelf.name }, transaction: transaction);
 
                     // Commit the transaction to make the changes permanent
                     transaction.Commit();
@@ -93,8 +93,8 @@ namespace Piwnica
 
                 using (var transaction = _connection.BeginTransaction())
                 {
-                    string query = "INSERT INTO Item(idContener, idShelf, name) VALUES (@ContenerId, @idShelf, @name);";
-                    _connection.Execute(query, new { ContenerId = item.idContener, idShelf = item.idShelf, name = item.name }, 
+                    string query = "INSERT INTO Item(idContener, idShelf, name) VALUES (@idContener, @idShelf, @name);";
+                    _connection.Execute(query, new { idContener = item.idContener, idShelf = item.idShelf, name = item.name }, 
                         transaction: transaction);
 
                     // Commit the transaction to make the changes permanent

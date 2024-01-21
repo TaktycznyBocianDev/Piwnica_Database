@@ -11,8 +11,7 @@ namespace Piwnica
     {
 
         public int id {  get; set; }
-        [Column("ContenerId")]
-        public int idContener {  get; set; }
+        public int ContenerId {  get; set; }
         public string name { get; set; }
 
         public string AsString
@@ -24,7 +23,7 @@ namespace Piwnica
 
         public ShelfModel(int idContener, string name)
         {
-            this.idContener = idContener;
+            this.ContenerId = idContener;
             this.name = name;
         }
 

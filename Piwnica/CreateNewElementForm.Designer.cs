@@ -32,6 +32,7 @@
             BackBtn = new Button();
             textBox1 = new TextBox();
             label1 = new Label();
+            ModBtn = new Button();
             SuspendLayout();
             // 
             // AddBtn
@@ -71,11 +72,22 @@
             label1.TabIndex = 3;
             label1.Text = "Nazwa Obiektu";
             // 
+            // ModBtn
+            // 
+            ModBtn.Location = new Point(441, 155);
+            ModBtn.Name = "ModBtn";
+            ModBtn.Size = new Size(94, 29);
+            ModBtn.TabIndex = 4;
+            ModBtn.Text = "Modyfikuj";
+            ModBtn.UseVisualStyleBackColor = true;
+            ModBtn.Click += ModBtn_Click;
+            // 
             // CreateNewElementForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(547, 196);
+            Controls.Add(ModBtn);
             Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(BackBtn);
@@ -92,5 +104,6 @@
         private Button BackBtn;
         private TextBox textBox1;
         private Label label1;
+        private Button ModBtn;
     }
 }
